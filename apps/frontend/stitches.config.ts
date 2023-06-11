@@ -30,7 +30,7 @@ export const {
     },
 
     fontSizes: {
-      sm: "0.7em",
+      sm: "0.8em",
       md: "1em",
       lg: "2em",
       xl: "3em",
@@ -39,7 +39,7 @@ export const {
   },
   media: {
     bp1: "(min-width: 640px)",
-    bp2: "(min-width: 768px)",
+    bp2: "(min-width: 850px)",
     bp3: "(min-width: 1024px)",
   },
 });

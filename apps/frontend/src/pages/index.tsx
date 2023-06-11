@@ -19,7 +19,7 @@ export default function Home() {
           Veja em quais universidades você seria aprovado!
         </TypographyH2>
         <Button btn='primary' onClick={() => router.push("/simulate")}>
-          Simular agora
+          SIMULAR MINHAS NOTAS AGORA
         </Button>
       </SectionContainer>
     </>

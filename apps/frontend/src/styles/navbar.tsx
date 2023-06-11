@@ -7,15 +7,12 @@ interface ItemPageProps {
 }
 
 const Navbar = styled("header", {
-    paddingBottom: "10px",
+    paddingBottom: "30px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: "$sm",
+    fontSize: "$md",
 
-    "@bp1": {
-        fontSize: "$md",
-    }
 })
 
 const NavigationContainer = styled("nav", {
@@ -63,8 +60,8 @@ const Item = styled("li", {
 
 const NavbarComponent = () => {
     
-    const [selectedPageHome, SetSelectedPageHome] = useState<boolean>(false)
-    const [selectedPageSimulater, SetSelectedPageSimulater] = useState<boolean>(true)
+    const [selectedPageHome, SetSelectedPageHome] = useState<boolean>(true)
+    const [selectedPageSimulater, SetSelectedPageSimulater] = useState<boolean>(false)
 
     const SelectPage = () => {
         if(selectedPageHome) {

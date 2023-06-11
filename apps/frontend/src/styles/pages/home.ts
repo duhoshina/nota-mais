@@ -12,28 +12,19 @@ const floating = keyframes({
 });
 
 export const Title = styled(TypographyH1, {
+  color: "$text",
   fontSize: "$lg",
-  lineHeight: "1.2em",
-
-  '@bp1': {
-    fontSize: "$xl"
-  },
-
-  '@bp3': {
-    maxWidth: "720px",
-    fontSize: "$2xl"
-  }
 });
 
 export const Subtitle = styled(TypographyP1, {
-  fontSize: "$sm",
+  fontSize: "$md",
   fontWeight: "500",
 });
 
 export const Span = styled("span", {
   color: "$text",
   fontWeight: "bold",
-  fontSize: "$lg",
+  fontSize: "$md",
   display: "inline",
 
   variants: {
@@ -49,87 +40,94 @@ export const Span = styled("span", {
 export const FirstSection = styled("section", {
   width: "100%",
   display: "flex",
-  flexWrap: "wrap",
   alignItems: "center",
-  justifyContent: "space-around",
+  flexWrap: 'wrap',
+  justifyContent: "space-between",
+  flexDirection: "column-reverse",
 
   '@bp1': {
-    height: "80vh",
-    flexDirection: "row-reverse",
-    justifyContent: "space-around",
-  }
+    flexDirection: "row",
+  },
+
+ '@bp2': {
+  justifyContent: 'start'
+ },
+
+ '@bp3': {
+  justifyContent: 'space-around'
+ }
+
 });
 
 export const SecondSection = styled("section", {
   width: "100%",
   minHeight: "80vh",
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "column-reverse",
   gap: "20px",
   textAlign: "center",
   justifyContent: "center",
 
   '@bp1': {
     flexDirection: "row-reverse",
-    justifyContent: "start"
-  }
+    justifyContent: "start",
+    maxWidth: '1240px'
+  },
+
 });
 
 export const ContainerRight = styled("div", {
-  width: "100%",
   minWidth: "340px",
-  margin: "auto",
+  width: "100%",
   display: "flex",
   flexDirection: "column",
   textAlign: "start",
-  justifyContent: "center",
-  gap: "10px",
+  gap: "20px",
+
 
   '@bp1': {
-    minWidth: "350px",
-    maxWidth: "650px",
-    width: "60%",
-    margin: "0px"
+    minWidth: "340px",
+    width: "45%",
+  },
+
+  '@bp2': {
+    width: '520px',
+    fontSize: "24px",
   }
+
 });
 
 export const ContainerLeft = styled("div", {
   display: "flex",
   alignItems: "end",
   justifyContent: "center",
-  width: "100%",
+  width: "240px",
 
-  "@bp1": {
-    maxWidth: "40%",
-    justifyContent: "start"
-  },
+  '@bp1': {
+    width: "40%",
+    maxWidth: "380px"
+  }
 
 });
 
 export const ContainerButtons = styled("div", {
   display: "flex",
   width: "100%",
-  margin: "10px 0px",
   textAlign: "center",
   gap: "20px",
-
-  '@bp1': {
-
-  }
 });
 
 export const ElementFloating = styled(Image, {
   width: "100%",
   height: "100%",
-  maxWidth: "200px",
   zIndex: "-2",
   animation: `${floating} 1s infinite ease-in-out alternate`,
 
   '@bp1': {
-    margin: "0px",
-    width: "100%",
-    maxWidth: "400px",
+    width: '30vw',
+    maxWidth: "380px"
   }
+
 });
 
 export const ContainerItems = styled("div", {
@@ -137,13 +135,11 @@ export const ContainerItems = styled("div", {
   width: "100%",
   marginTop: "20px",
   justifyContent: "center",
-  alignItems: "end",
   gap: "20px",
+  alignItems: "end",
 
-  '@bp3': {
-    justifyContent: "start",
-    fontSize: "22px",
-    height: "15vh"
+  '@bp1': {
+    justifyContent: "start"
   }
 });
 
@@ -158,13 +154,18 @@ export const SpanDivisor = styled("span", {
 });
 
 export const ThirdSection = styled("section", {
-  height: "100vh",
+  display: "flex",
+  width: '100%',
+  maxWidth: '1240px',
+  flexDirection: "column",
+  alignItems: 'center',
+  gap: '30px',
 })
 
 export const GlassItemsContainer = styled("div", {
   flexDirection: "column",
-  justifyContent: "center",
   display: "flex",
-  maxWidth: "540px",
-  gap: "20px"
+  maxWidth: "460px",
+  gap: "20px",
+
 })

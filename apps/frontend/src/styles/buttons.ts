@@ -52,16 +52,12 @@ export const ButtonForm = styled("button", {
 });
 
 export const Button = styled("p", {
-  padding: "1em",
+  padding: "20px",
   fontSize: "$md",
   borderRadius: "20px",
   transition: "0.3s ease-out",
   textDecoration: "none",
   animation: "${FloatingFrame} 1s infinite ease-in-out alternate",
-
-  "@bp1": {
-    padding: "1.5em 2em"
-  },
 
   "&:hover": {
     cursor: "pointer",

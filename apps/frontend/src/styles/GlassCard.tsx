@@ -12,7 +12,7 @@ type Props = {
 const GlassCard = (props: Props) => {
 
     const GlassCard = styled("div", {
-        padding: "2em",
+        padding: "20px",
         zIndex: "2",
         top: `${props.top}`,
         bottom: `${props.bottom}`,
@@ -20,21 +20,19 @@ const GlassCard = (props: Props) => {
         flexDirection: "column",
         gap: "10px",
         fontWeight: "bold",
+        textAlign: 'start',
         
         backgroundColor: "rgba(0, 0, 0, 0.2)",
         borderRadius: "12px",
         border: "1px solid rgba(255, 255, 255, 0.2)",
         backdropFilter: "blur(6px) saturate(120%)",
         transition: "0.3s ease-out",
-
-        "&:hover": {
-            backgroundColor: "$gradientPrimary",
-        }
         
     })
 
     const Description = styled("p", {
-
+        fontWeight: 'normal',
+        lineHeight: '2em'
     })
 
     return (

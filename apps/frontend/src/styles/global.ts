@@ -16,9 +16,25 @@ export const globalStyles = globalCss({
     fontFamily: "Montserrat, sans-serif",
     fontSize: "16px",
     overflowX: "hidden",
-    backgroundImage: `url("https://i.imgur.com/7nerf0E_d.webp?maxwidth=760&fidelity=grand")`,
+    backgroundImage: `url("https://i.imgur.com/u6K3VPF.jpg")`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+
+    '&::-webkit-scrollbar': {
+      width: '8px',
+    },
+
+    '&::-webkit-scrollbar-track': {
+      borderRadius: '15px',
+      backgroundColor: 'none',
+      marginBlock: '.5em'
+    },
+
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: '$primary',
+      borderRadius: '15px',
+    },
+
   },
 
   a: {

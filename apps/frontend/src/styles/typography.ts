@@ -26,10 +26,10 @@ export const TypographyBtn = styled("p", {
 
 export const TypographyP1 = styled("p", {
   color: "$purple50",
-  fontSize: "$sm",
+  fontSize: "$md",
 });
 
 export const TypographyP2 = styled("p", {
   color: "$purple50",
-  fontSize: "$md",
+  fontSize: "$sm",
 });

@@ -14,6 +14,7 @@ export default function Simulate() {
   const { register, handleSubmit, control, formState } = useForm({
     mode: "onChange",
   });
+
   function registerLead(data: any) {
     console.log(data);
   }
@@ -26,7 +27,7 @@ export default function Simulate() {
     { value: "5", label: "Quimica" },
     { value: "6", label: "Zootecnia" },
   ];
-
+  
   const CustomStyle = {
     option: (base: any, state: { isSelected: any }) => ({
       ...base,

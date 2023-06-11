@@ -7,6 +7,6 @@ export const MainContainer = styled("main", {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  gap: "50px",
-  margin: "auto"
+  margin: "auto",
+  gap: "30px"
 });
