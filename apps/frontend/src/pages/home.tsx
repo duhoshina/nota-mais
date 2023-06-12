@@ -14,6 +14,7 @@ import {
   ContainerItems,
   ThirdSection,
   GlassItemsContainer,
+  Container,
 } from "../styles/pages/home";
 import { Button } from "../styles/buttons";
 import Hero from "../assets/astronauta-flutuando.png";
@@ -25,6 +26,9 @@ import IconBaloon from "../assets/balao-aprovacoes.png"
 import Mockup from "../assets/notamais-aplicativo-mockup.png"
 import GlassCard from "../styles/GlassCard";
 import ItemComponent from "../styles/ItemComponent";
+import Relogio from '../assets/alarm-clock.png'
+import Update from '../assets/renewable-energy.png'
+import University from '../assets/graduation.png'
 
 const Homepage = () => {
 
@@ -43,7 +47,7 @@ const Homepage = () => {
           <Title>Veja em quantas universidades você passaria no ENEM</Title>
           <ContainerButtons>
             <Link href="/simulate">
-              <Button btn="primary">VER MINHAS APROVAÇÕES AGORA</Button>
+              <Button btn="primary">usar o simulador agora</Button>
             </Link>
           </ContainerButtons>
           <ContainerItems>
@@ -65,12 +69,13 @@ const Homepage = () => {
           />
         </ContainerLeft>
       </FirstSection>
+
       <SecondSection>
         <GlassItemsContainer>
           <GlassCard title="Nota Mais" description="A melhor plataforma para estudantes simularem suas aprovações no Enem 2023 em apenas alguns segundos" />
           <span style={{width: '100%', border: '1px solid rgb(255, 255, 255, 0.2)'}} />
           <GlassCard title="Simulação Real" description="Através do simulador você terá uma noção mais realista das chances de ser selecionado para seu curso desejado" />
-          <Button btn="primary">Clique aqui para usar o simulador</Button>
+          <Button btn="primary">Ver minhas aprovações</Button>
         </GlassItemsContainer>
         <div style={{
           width: "100%",
@@ -89,10 +94,12 @@ const Homepage = () => {
       </SecondSection>
 
       <ThirdSection>
-        <ItemComponent description="Receba o resultado em segundos" icon='img' theme="white"/>
-        <ItemComponent description="Notas de corte atualizadas 2023" icon='img' theme="purple"/>
-        <ItemComponent description="Notas de corte atualizadas 2023" icon='img' theme="purple"/>
-        <ItemComponent description="Veja quais vagas você tem chance na lista de espera" icon='img' theme="white"/>
+        <Container>
+          <ItemComponent description="Toda a simulação é feita em alguns segundos" icon={Relogio} />
+          <ItemComponent description="Melhore seu posicionamento na seleção do SiSU" icon={Update} />
+          <ItemComponent description="Encontre a universidade perfeita para sua nota" icon={University} />
+        </Container>
+        <Button btn='primary'>Quero fazer uma simulação</Button>
       </ThirdSection>
     </>
   );

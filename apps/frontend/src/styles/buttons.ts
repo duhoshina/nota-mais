@@ -53,7 +53,9 @@ export const ButtonForm = styled("button", {
 
 export const Button = styled("p", {
   padding: "20px",
+  textTransform: 'uppercase',
   fontSize: "$md",
+  fontWeight: "bold",
   borderRadius: "20px",
   transition: "0.3s ease-out",
   textDecoration: "none",

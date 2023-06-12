@@ -61,10 +61,11 @@ export const FirstSection = styled("section", {
 
 export const SecondSection = styled("section", {
   width: "100%",
+  marginTop: '50px',
   minHeight: "80vh",
   display: "flex",
   flexDirection: "column-reverse",
-  gap: "20px",
+  gap: "50px",
   textAlign: "center",
   justifyContent: "center",
 
@@ -159,13 +160,30 @@ export const ThirdSection = styled("section", {
   maxWidth: '1240px',
   flexDirection: "column",
   alignItems: 'center',
-  gap: '30px',
+  gap: '50px',
+  lineHeight: '2em',
+  marginTop: '50px',
+
+  '@bp1': {
+    marginTop: '0px'
+  }
+
 })
 
 export const GlassItemsContainer = styled("div", {
   flexDirection: "column",
   display: "flex",
   maxWidth: "460px",
-  gap: "20px",
+  gap: "40px",
 
+})
+
+export const Container = styled("div", {
+  display: 'flex',
+  gap: '50px',
+  flexDirection: 'column',
+
+  '@bp2': {
+    flexDirection: 'row'
+  }
 })
