@@ -59,7 +59,6 @@ export const Button = styled("p", {
   borderRadius: "20px",
   transition: "0.3s ease-out",
   textDecoration: "none",
-  animation: "${FloatingFrame} 1s infinite ease-in-out alternate",
 
   "&:hover": {
     cursor: "pointer",

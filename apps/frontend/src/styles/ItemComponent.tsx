@@ -11,13 +11,14 @@ const ItemComponent = (props: Props) => {
 
     const Container = styled("div", {
         display: 'flex',
+        width: '100%',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: "center",
         textAlign: 'center',
         fontSize: "24px",
         gap: "10px",
-        fontWeight: "bold"
+        fontWeight: "bold",
     })
 
     const ContainerImg = styled("div", {

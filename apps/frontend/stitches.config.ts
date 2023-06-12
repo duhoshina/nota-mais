@@ -32,8 +32,8 @@ export const {
     fontSizes: {
       sm: "0.8em",
       md: "1em",
-      lg: "2em",
-      xl: "3em",
+      lg: "2rem",
+      xl: "2rem",
       '2xl': "4em"
     },
   },

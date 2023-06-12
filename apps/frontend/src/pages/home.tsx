@@ -75,16 +75,14 @@ const Homepage = () => {
           <GlassCard title="Nota Mais" description="A melhor plataforma para estudantes simularem suas aprovações no Enem 2023 em apenas alguns segundos" />
           <span style={{width: '100%', border: '1px solid rgb(255, 255, 255, 0.2)'}} />
           <GlassCard title="Simulação Real" description="Através do simulador você terá uma noção mais realista das chances de ser selecionado para seu curso desejado" />
-          <Button btn="primary">Ver minhas aprovações</Button>
         </GlassItemsContainer>
         <div style={{
           width: "100%",
-          maxWidth: "400px",
+          maxWidth: "400px", display: 'flex', justifyContent: 'center'
         }}>
           <Image src={Mockup} alt="Mockup do aplicativo do Nota Mais" sizes="100vw" style={{
-            width: '90%',
-            height: 'auto',
-            maxWidth: '350px',
+            width: '100%',
+            height: '100%',
             backgroundColor: 'pink',
             borderRadius: '45px',
             boxShadow: '-5px -1px 34px 3px rgba(255, 255, 255, 0.49)'

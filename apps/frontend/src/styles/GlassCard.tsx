@@ -32,7 +32,8 @@ const GlassCard = (props: Props) => {
 
     const Description = styled("p", {
         fontWeight: 'normal',
-        lineHeight: '2em'
+        lineHeight: '2em',
+        fontSize: '20px'
     })
 
     return (

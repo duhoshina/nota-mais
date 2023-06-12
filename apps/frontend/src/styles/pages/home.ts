@@ -14,6 +14,10 @@ const floating = keyframes({
 export const Title = styled(TypographyH1, {
   color: "$text",
   fontSize: "$lg",
+
+  '@bp2': {
+    fontSize: '40px'
+  }
 });
 
 export const Subtitle = styled(TypographyP1, {
@@ -64,15 +68,15 @@ export const SecondSection = styled("section", {
   marginTop: '50px',
   minHeight: "80vh",
   display: "flex",
-  flexDirection: "column-reverse",
+  flexDirection: "column",
   gap: "50px",
   textAlign: "center",
   justifyContent: "center",
 
   '@bp1': {
     flexDirection: "row-reverse",
-    justifyContent: "start",
-    maxWidth: '1240px'
+    maxWidth: '1240px',
+    marginTop: '0px'
   },
 
 });
@@ -114,6 +118,7 @@ export const ContainerLeft = styled("div", {
 export const ContainerButtons = styled("div", {
   display: "flex",
   width: "100%",
+  fontSize: '20px',
   textAlign: "center",
   gap: "20px",
 });
@@ -165,7 +170,7 @@ export const ThirdSection = styled("section", {
   marginTop: '50px',
 
   '@bp1': {
-    marginTop: '0px'
+    marginTop: '100px'
   }
 
 })
@@ -173,17 +178,30 @@ export const ThirdSection = styled("section", {
 export const GlassItemsContainer = styled("div", {
   flexDirection: "column",
   display: "flex",
-  maxWidth: "460px",
+  maxWidth: "100%",
   gap: "40px",
+  justifyContent: 'center',
 
+  '@bp2': {
+    maxWidth: "50%"
+  }
 })
 
 export const Container = styled("div", {
   display: 'flex',
+  padding: '40px',
+  maxWidth: '250px',
+  width: '90%',
+  justifyContent: 'space-around',
   gap: '50px',
   flexDirection: 'column',
+  backgroundColor: "rgba(0, 0, 0, 0.2)",
+  border: "1px solid rgba(255, 255, 255, 0.2)",
+  backdropFilter: "blur(6px) saturate(120%)",
+  borderRadius: '20px',
 
-  '@bp2': {
-    flexDirection: 'row'
+  '@bp1': {
+    flexDirection: 'row',
+    maxWidth: 'none',
   }
 })
