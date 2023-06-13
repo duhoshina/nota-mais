@@ -15,6 +15,8 @@ import {
   ThirdSection,
   GlassItemsContainer,
   Container,
+  FourSection,
+  ContainerImage,
 } from "../styles/pages/home";
 import { Button } from "../styles/buttons";
 import Hero from "../assets/astronauta-flutuando.png";
@@ -76,22 +78,21 @@ const Homepage = () => {
           <span style={{width: '100%', border: '1px solid rgb(255, 255, 255, 0.2)'}} />
           <GlassCard title="Simulação Real" description="Através do simulador você terá uma noção mais realista das chances de ser selecionado para seu curso desejado" />
         </GlassItemsContainer>
-        <div style={{
-          width: "100%",
-          maxWidth: "400px", display: 'flex', justifyContent: 'center'
-        }}>
+        <ContainerImage>
           <Image src={Mockup} alt="Mockup do aplicativo do Nota Mais" sizes="100vw" style={{
-            width: '100%',
             height: '100%',
+            maxWidth: '300px',
+            margin: 'auto',
             backgroundColor: 'pink',
-            borderRadius: '45px',
+            borderRadius: '35px',
             boxShadow: '-5px -1px 34px 3px rgba(255, 255, 255, 0.49)'
           }}
           />
-        </div>
+        </ContainerImage>
       </SecondSection>
 
       <ThirdSection>
+        <Title color='dark'>Como o simulador te ajuda?</Title>
         <Container>
           <ItemComponent description="Toda a simulação é feita em alguns segundos" icon={Relogio} />
           <ItemComponent description="Melhore seu posicionamento na seleção do SiSU" icon={Update} />
@@ -99,6 +100,12 @@ const Homepage = () => {
         </Container>
         <Button btn='primary'>Quero fazer uma simulação</Button>
       </ThirdSection>
+
+      <FourSection>
+          <p>Todos os direitos reservados 2023</p>
+          <p>Simulador Oficial Nota Mais</p>
+      </FourSection>
+
     </>
   );
 };

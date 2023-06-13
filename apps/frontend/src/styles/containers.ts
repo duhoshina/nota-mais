@@ -8,5 +8,4 @@ export const MainContainer = styled("main", {
   flexDirection: "column",
   alignItems: "center",
   margin: "auto",
-  gap: "30px"
 });

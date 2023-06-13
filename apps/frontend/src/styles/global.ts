@@ -8,7 +8,10 @@ export const globalStyles = globalCss({
 
   body: {
     "-webkit-font-smoothing": "antialiasad",
-    backgroundColor: "$purple900",
+    backgroundColor: "rgba(0, 6, 57, 1)",
+    backgroundImage: `url("https://i.imgur.com/u6K3VPF.jpg")`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
     color: "$text",
     minHeight: "100vh",
     fontWeight: "300",
@@ -16,9 +19,6 @@ export const globalStyles = globalCss({
     fontFamily: "Montserrat, sans-serif",
     fontSize: "16px",
     overflowX: "hidden",
-    backgroundImage: `url("https://i.imgur.com/u6K3VPF.jpg")`,
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
 
     '&::-webkit-scrollbar': {
       width: '8px',

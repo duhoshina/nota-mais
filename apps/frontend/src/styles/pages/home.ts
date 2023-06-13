@@ -14,10 +14,12 @@ const floating = keyframes({
 export const Title = styled(TypographyH1, {
   color: "$text",
   fontSize: "$lg",
+  lineHeight: "1.5em",
 
   '@bp2': {
     fontSize: '40px'
-  }
+  },
+
 });
 
 export const Subtitle = styled(TypographyP1, {
@@ -66,17 +68,18 @@ export const FirstSection = styled("section", {
 export const SecondSection = styled("section", {
   width: "100%",
   marginTop: '50px',
-  minHeight: "80vh",
   display: "flex",
   flexDirection: "column",
   gap: "50px",
   textAlign: "center",
   justifyContent: "center",
-
+  
   '@bp1': {
     flexDirection: "row-reverse",
     maxWidth: '1240px',
-    marginTop: '0px'
+    marginTop: '0px',
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
 
 });
@@ -96,7 +99,7 @@ export const ContainerRight = styled("div", {
   },
 
   '@bp2': {
-    width: '520px',
+    width: '480px',
     fontSize: "24px",
   }
 
@@ -149,6 +152,10 @@ export const ContainerItems = styled("div", {
   }
 });
 
+export const ContainerImage = styled("div", {
+  
+})
+
 export const SpanDivisor = styled("span", {
   border: "1px solid white",
   opacity: "70%",
@@ -168,11 +175,7 @@ export const ThirdSection = styled("section", {
   gap: '50px',
   lineHeight: '2em',
   marginTop: '50px',
-
-  '@bp1': {
-    marginTop: '100px'
-  }
-
+  textAlign: "center"
 })
 
 export const GlassItemsContainer = styled("div", {
@@ -204,4 +207,14 @@ export const Container = styled("div", {
     flexDirection: 'row',
     maxWidth: 'none',
   }
+})
+
+export const FourSection = styled("div", {
+  height: '100px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '20px',
+  marginTop: '30px'
 })
